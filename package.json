@@ -1,0 +1,33 @@
+{
+  "name": "ng2-switch",
+  "version": "2.0.0",
+  "description": "An switch component for Angular 2.",
+  "main": "src/ng2-switch.ts",
+  "scripts": {
+    "start": "webpack-dev-server --port 3000 --content-base demo/"
+  },
+  "author": "morning<wzl_911@qq.com>",
+  "license": "MIT",
+    "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ibufu/ng2-switch.git"
+  },
+  "dependencies": {
+    "@angular/common": "^2.0.0",
+    "@angular/compiler": "^2.0.0",
+    "@angular/core": "^2.0.0",
+    "@angular/forms": "^2.0.0",
+    "@angular/platform-browser": "^2.0.0",
+    "@angular/platform-browser-dynamic": "^2.0.0",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "^0.6.23"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "^2.2.4",
+    "typescript": "^2.0.2",
+    "typings": "^1.3.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

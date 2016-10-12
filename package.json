@@ -1,13 +1,13 @@
 {
   "name": "ng2-switch",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "An switch component for Angular 2.",
-   "keywords": [
-     "angular",
-     "angular2",
-     "ng2",
-     "switch",
-     "component"
+  "keywords": [
+    "angular",
+    "angular2",
+    "ng2",
+    "switch",
+    "component"
   ],
   "main": "src/ng2-switch.ts",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "author": "morning<wzl_911@qq.com>",
   "license": "MIT",
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/ibufu/ng2-switch.git"
   },

@@ -1,5 +1,5 @@
 # ng2 switch
-An switch component for Angular 2.
+A switch component for Angular 2.
 
 ![Alt text](demo/demo.png)
 ## Installation

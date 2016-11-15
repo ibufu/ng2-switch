@@ -9,7 +9,8 @@
     "switch",
     "component"
   ],
-  "main": "index.d.ts",
+  "main": "./src/ng2-switch.ts",
+  "typings": "index.d.ts",
   "scripts": {
     "start": "webpack-dev-server --port 3000 --content-base demo/"
   },

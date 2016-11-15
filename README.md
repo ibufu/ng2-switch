@@ -8,7 +8,7 @@ $ npm install --save ng2-switch
 ```
 ## Usage
 ```js
-import { NgSwitchModule } from '../src/ng2-switch';
+import { NgSwitchModule } from 'ng2-switch';
 @NgModule({
     imports: [NgSwitchModule]
 })

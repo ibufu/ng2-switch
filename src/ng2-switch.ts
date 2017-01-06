@@ -14,7 +14,7 @@ export const SWITCH_CONTROL_VALUE_ACCESSOR: any = {
     multi: true
 };
 
-function booleanFieldValueFactory() {
+export function booleanFieldValueFactory() {
     return function booleanFieldValueMetadata(target: any, key: string): void {
         const defaultValue = target[key];
         const localKey = `__md_private_symbol_${key}`;

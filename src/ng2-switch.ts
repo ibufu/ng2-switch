@@ -32,65 +32,65 @@ export function booleanFieldValueFactory() {
 @Component({
     selector: 'ng-switch',
     template: `
-        <input
-            class="ng2-switch"
-            type="checkbox"
-            [disabled]="disabled"
-            [(ngModel)]="value"
-        />
+        <label class="ng2-switch" [ngClass]="{'disabled': disabled}">
+            <input class="ng2-switch-input" 
+                   type="checkbox"
+                   [disabled]="disabled"
+                   [(ngModel)]="value" />
+            <span class="ng2-switch-label" data-on="On" data-off="Off"></span> 
+            <span class="ng2-switch-handle"></span> 
+        </label>
     `,
     styles: [`
         .ng2-switch {
             position: relative;
+            display: block;
+            vertical-align: top;
             width: 52px;
             height: 32px;
-            border: 1px solid #dfdfdf;
-            outline: 0;
-            border-radius: 16px;
-            box-sizing: border-box;
             background: #dfdfdf;
+            border-radius: 16px;
             cursor: pointer;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
         }
-        .ng2-switch:focus {
-            outline: none;
-        }
-        .ng2-switch:after, .switch:before {
-            content: " ";
+        .ng2-switch-input {
             position: absolute;
             top: 0;
             left: 0;
-            height: 30px;
-            border-radius: 15px;
-            -webkit-transition: -webkit-transform .3s;
-            transition: -webkit-transform .3s;
-            transition: transform .3s;
-            transition: transform .3s,-webkit-transform .3s;
+            opacity: 0;
         }
-        .ng2-switch:before {
-            width: 50px;
-            background-color: #fdfdfd;
+        .ng2-switch-label {
+            position: relative;
+            display: block;
+            height: inherit;
+            background: #dfdfdf;
+            border-radius: inherit;
         }
-        .ng2-switch:after {
+        
+        .ng2-switch-input:checked ~ .ng2-switch-label {
+            background: #04be02;
+        }
+        .ng2-switch-handle {
+            position: absolute;
+            top: 1px;
+            left: 1px;
             width: 30px;
+            height: 30px;
+            border-radius: 100%;
             background-color: #fff;
             box-shadow: 0 1px 3px rgba(0,0,0,.4);
         }
-        .ng2-switch:checked {
-            border-color: #04be02;
-            background-color: #04be02;
+        .ng2-switch-input:checked ~ .ng2-switch-handle {
+            left: 20px;
         }
-        .ng2-switch:checked:before {
-            -webkit-transform: scale(0);
-            transform: scale(0);
+         
+        .ng2-switch-label, .ng2-switch-handle {
+            transition: All 0.3s ease;
+            -webkit-transition: All 0.3s ease;
+            -moz-transition: All 0.3s ease;
+            -o-transition: All 0.3s ease;
         }
-        .ng2-switch:checked:after {
-            -webkit-transform: translateX(20px);
-            transform: translateX(20px);
-        }
-        .ng2-switch:disabled {
+        
+        .ng2-switch.disabled {
             cursor: not-allowed;
         }
     `],

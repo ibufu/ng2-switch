@@ -11,10 +11,17 @@ import { NgSwitchModule } from '../src/ng2-switch';
 
 @Component({
     selector: '#app',
-    template: `<ng-switch [(ngModel)]="value"></ng-switch>
-    <p>value: {{value | json}}</p>
-    <p>disabled:<p>
-    <ng-switch disabled></ng-switch>
+    template: `
+        <h3>Switch</h3>
+        <ng-switch [(ngModel)]="value"></ng-switch>
+        <p>value: {{value | json}}</p>
+        
+        <h3>Disabled switch (false):</h3>
+        <ng-switch [value]="false" disabled></ng-switch>
+        
+        <h3>Disabled switch (true):</h3>
+        <ng-switch [value]="true" disabled></ng-switch>
+        
     `,
 })
 class App {

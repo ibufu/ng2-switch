@@ -37,7 +37,7 @@ export function booleanFieldValueFactory() {
                    type="checkbox"
                    [disabled]="disabled"
                    [(ngModel)]="value" />
-            <span class="ng2-switch-label" data-on="On" data-off="Off"></span> 
+            <span class="ng2-switch-label"></span> 
             <span class="ng2-switch-handle"></span> 
         </label>
     `,

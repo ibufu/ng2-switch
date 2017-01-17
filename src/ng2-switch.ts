@@ -80,7 +80,7 @@ export function booleanFieldValueFactory() {
             box-shadow: 0 1px 3px rgba(0,0,0,.4);
         }
         .ng2-switch-input:checked ~ .ng2-switch-handle {
-            left: 20px;
+            left: 21px;
         }
          
         .ng2-switch-label, .ng2-switch-handle {
